@@ -15,6 +15,7 @@ h2 {
 }
 
 table {
+    border-style: solid;
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
@@ -22,6 +23,7 @@ table {
 
 th,
 td {
+    border-style: solid;
     padding: 8px;
     text-align: left;
     border-bottom: 1px solid #ddd;
