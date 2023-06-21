@@ -1,0 +1,20 @@
+<h1>Listado de usuarios</h1>
+<h2>Registro:usuarios</h2>
+<table border="1">
+    <thead>
+        <th>nombre</th>
+        <th>nombre_dueño</th>
+        <th>edad</th>
+        <th>telefono</th>
+    </thead>
+    <tbody>
+        {{#each pets}}
+        <tr>
+            <td>{{nombre}}</td>
+            <td>{{nombre_duenio}}</td>
+            <td>{{edad}}</td>
+            <td>{{telefono}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

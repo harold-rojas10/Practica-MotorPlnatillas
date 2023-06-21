@@ -1,0 +1,22 @@
+<h1>Listado de usuarios</h1>
+<h2>Registro:usuarios</h2>
+<table border="1">
+    <thead>
+        <th>Cedula</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+        <th>Fecha de nacimiento</th>
+    </thead>
+    <tbody>
+        {{#each usuarios}}
+        <tr>
+            <td>{{cedula}}</td>
+            <td>{{nombre}}</td>
+            <td>{{apellido}}</td>
+            <td>{{edad}}</td>
+            <td>{{formatoFecha fecha_nacimiento}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

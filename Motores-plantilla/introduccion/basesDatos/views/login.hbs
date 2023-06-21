@@ -1,0 +1,14 @@
+<h1>Inicio de sesión</h1>
+{{!-- uso de helpers --}}
+{{#if error}} 
+<p style="color: red;"> {{mensaje}} </p>
+{{else}} 
+<p>{{mensaje}}</p>
+{{/if}}
+    <form action="/login" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Enviar">
+    </form>
