@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="css/usuarios.css">
+</head>
+<body>
+    <h1>Listado de usuarios</h1>
+    <h2>Registro:usuarios</h2>
+    <table border="1">
+        <thead>
+            <th>Cedula</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Fecha de nacimiento</th>
+        </thead>
+        <tbody>
+            <% filas.forEach( function(fila) { %>
+            <tr>
+                <td><%= fila.cedula %></td>
+                <td><%= fila.nombre %></td>
+                <td><%= fila.apellido %></td>
+                <td><%= fila.edad %></td>
+                <td><%= fila.fecha_nacimiento  %></td>
+            </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</body>
+</html>
